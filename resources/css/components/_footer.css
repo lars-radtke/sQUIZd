@@ -11,22 +11,22 @@
 	width: 25%;
 	opacity: 0.3;
 	cursor: default;
-	border-top: 1px solid rgba(var(--col-white),0);
+	border-top: 1px solid rgba(var(--white),0);
 	transition: 0.3s;
 }
 
 .footer__link:hover {
 	opacity: 1;
-	background-color: rgba(var(--col-white),0.1);
+	background-color: rgba(var(--white),0.1);
 }
 
 .footer__link--active {
 	opacity: 1;
-	border-top: 1px solid rgba(var(--col-white),1);
+	border-top: 1px solid rgba(var(--white),1);
 }
 
 .footer__link--active:hover {
-	background-color: rgba(var(--col-white),0);
+	background-color: rgba(var(--white),0);
 }
 
 
