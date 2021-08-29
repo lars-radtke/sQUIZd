@@ -1,0 +1,38 @@
+.footer {
+	width: 100%;
+	max-width: 500px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.footer__link {
+	width: 25%;
+	opacity: 0.3;
+	cursor: default;
+	border-top: 1px solid rgba(var(--col-white),0);
+	transition: 0.3s;
+}
+
+.footer__link:hover {
+	opacity: 1;
+	background-color: rgba(var(--col-white),0.1);
+}
+
+.footer__link--active {
+	opacity: 1;
+	border-top: 1px solid rgba(var(--col-white),1);
+}
+
+.footer__link--active:hover {
+	background-color: rgba(var(--col-white),0);
+}
+
+
+.footer__icon {
+	box-sizing: content-box;
+	width: 40px;
+	padding: 10px;
+	cursor: pointer;
+}

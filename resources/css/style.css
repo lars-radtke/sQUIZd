@@ -1,3 +1,8 @@
 @import "parts/_reset.css";
+@import "parts/_fonts.css";
+@import "parts/_colors.css";
+@import "parts/_flexbox.css";
+@import "parts/_grid.css";
 
+@import "components/_base.css";
 @import "components/_footer";
