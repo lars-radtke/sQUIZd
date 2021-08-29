@@ -7,14 +7,39 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
     <title>Home | sQUIZd</title>
   </head>
   <body>
 	  <header class="header">
 	  </header>
-	  <main class="main">
+	  <main class="main grid">
+		  <aside class="squid">
+		  </aside>
+		<article class="tile">
+			<aside class="bookmark">
 
+			</aside>
+			<p class="tile__question">
+				What do you call a group of penguins on land?
+			</p>
+			<form class="tile__form">
+				<label class="tile__label">
+					Your answer:&nbsp;
+					<input class="tile__input" name="answer" placeholder="Type in your answer here"> 
+				</label>
+			</form>
+			<button class="tile__button">Show answer</button>
+			<p class="answer">A waddle</p>
+		</article>
+		<article class="tile tile--bookmarked">
+		</article>
+		<article class="tile tile--incorrect">
+		</article>
+		<article class="tile tile--assist">
+		</article>
+		<article class="tile tile--correct">
+		</article>
 	  </main>
 	  <footer class="footer flex f-justify-between">
 		<a href="/" class="footer__link footer__link--active flex f-justify-around">
