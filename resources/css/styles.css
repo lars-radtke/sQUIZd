@@ -5,4 +5,7 @@
 @import "parts/_grid.css";
 
 @import "components/_base.css";
+@import "components/_main.css";
+@import "components/_tile.css";
+@import "components/_squid.css";
 @import "components/_footer";
