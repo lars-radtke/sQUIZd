@@ -1,0 +1,6 @@
+body {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgb(var(--col-ice)) 0%, rgb(var(--col-light-blue)) 33%, rgb(var(--col-blue)) 66%, rgb(var(--col-cobalt)) 100%);
+	background-attachment: fixed;
+}
