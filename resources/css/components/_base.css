@@ -1,5 +1,5 @@
 body {
-	height: 100%;
+	height: 100vw;
 	width: 100%;
 	background-image: linear-gradient(rgb(var(--light-cyan)) 0%, rgb(var(--middle-blue)) 33%, rgb(var(--pacific-blue)) 66%, rgb(var(--french-blue)) 100%);
 	background-attachment: fixed;

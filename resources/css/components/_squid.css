@@ -5,9 +5,10 @@
 	height: 25vw;
 	max-width: 150px;
 	max-height: 150px;
-	position: absolute;
+	position: fixed;
 	left: calc(5vw - 30px);
 	bottom: 80px;
+	z-index: 1;
 }
 
 .squid:hover {
