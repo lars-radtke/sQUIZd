@@ -1,7 +1,9 @@
 .main {
-	height: 100%;
+	margin-top: 120px;
+	margin-bottom: 40vh;
 	width: 100%;
 	padding: 0px 40px;
 	grid-template-columns: 1fr;
 	row-gap: 80px;
 }
+
