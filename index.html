@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>sQUIZd | start</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+	
+  </head>
+  <body>
+    <header class="header backdrop flex f-column f-justify-between">
+      <h1 class="h1">
+        <span>s</span>QUIZ<span>d</span>
+      </h1>
+	  <div class="header__h2-container flex f-align-i-center">
+      	<h2 class="h2 h2--active" id="h2__start">Questions</h2>
+      	<h2 class="h2" id="h2__create">Create A Question</h2>
+      	<h2 class="h2" id="h2__profile">Profile</h2>
+	</div>
+    </header>
+    <main class="main flex">
+      <section class="section questions" id="section__questions">
+        <button
+          class="questions__toggle-bookmarks backdrop"
+		  id="toggle__bookmarks"
+		  title="Toggle bookmarked questions only off/on"
+          aria-label="Display bookmarked questions only"
+        >
+			<img class="questions__toggle-icon" src="resources/icons/anchor.svg">
+		</button>
+        <div class="questions__main">
+			<article class="tile">
+				<p class="tile__question">Who are the best Web Dev Coaches?</p>
+				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
+				</div>
+				<div class="tile__squid"></div>
+				<label class="tile__label tile__answer-label">Your Answer:
+					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
+				</label>
+				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>Lene, Lukas and Marc, obviously! </span>Like you couldn't figure that out yourself.</p>
+			</article>
+			<article class="tile">
+				<p class="tile__question">What do you call a group of penguins on land?</p>
+				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
+				</div>
+				<div class="tile__squid"></div>
+				<label class="tile__label tile__answer-label">Your Answer:
+					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
+				</label>
+				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>A group of penguins is called a wadlle when on land</span> and a raft when in the water.</p>
+			</article>
+			<article class="tile">
+				<p class="tile__question">What does the latin sentence "Post hoc ergo propter hoc" translate to?</p>
+				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
+				</div>
+				<div class="tile__squid"></div>
+				<label class="tile__label tile__answer-label">Your Answer:
+					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
+				</label>
+				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>After this, therefore because of this.</span></p>
+			</article>
+			<article class="tile">
+				<p class="tile__question">Where does the Kiwi Fruit originate from?</p>
+				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
+				</div>
+				<div class="tile__squid"></div>
+				<label class="tile__label tile__answer-label">Your Answer:
+					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
+				</label>
+				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>China. </span>It is also called Chinese gooseberry.</p>
+			</article>
+			<article class="tile">
+				<p class="tile__question">WHAT ARE THOSE????</p>
+				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
+				</div>
+				<div class="tile__squid"></div>
+				<label class="tile__label tile__answer-label">Your Answer:
+					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
+				</label>
+				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span><a href="https://www.youtube.com/watch?v=iik25wqIuFo" style="cursor: pointer;">Click here for the explanation.</a></span></p>
+			</article>
+        </div>
+      </section>
+      <section class="section" id="section__create">
+		<article class="tile tile__create bookmarked">
+			<label class="tile__label create__label">Your question:
+				<textarea class="tile__answer-area create__answer-area" placeholder="Type in your question here."></textarea>
+			</label>
+			<div class="tile__bookmark tile__bookmark--active" role="button" aria-label="Bookmark this question" title="Bookmark this question">
+			</div>
+			<label class="tile__label create__answer-label">Your Answer:
+				<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
+			</label>
+		</article>
+		<button class="create__submit-button">Submit question</button>
+		<button class="create__submit-button">Discard question</button>
+      </section>
+      <section class="section" id="section__profile"></section>
+    </main>
+    <footer class="footer backdrop flex f-justify-center f-align-i-center">
+		<div class="footer__container flex f-justify-around">
+			<button
+    	    	class="footer__button footer__button--active"
+    	    	id="footer__button--start"
+				title="Go to start"
+    	    	aria-label="Go to start"
+			>
+				<img class="footer__icon" src="resources/icons/lighthouse.svg">
+			</button>
+    	  	<button
+    	  	  	class="footer__button"
+    	  	  	id="footer__button--create"
+					title="Create a custom question"
+    	    	aria-label="Create a custom question"
+    	  	>
+			  <img class="footer__icon" src="resources/icons/pencil.svg">
+			</button>
+    	  	<button
+    		    class="footer__button"
+    		    id="footer__button--profile"
+				title="Go to your profile"
+    		    aria-label="Go to your profile"
+			>
+			<img class="footer__icon" src="resources/icons/captain.svg">
+			</button>
+	</div>
+    </footer>
+	<script src="resources/js/scripts.js"></script>
+  </body>
+</html>
