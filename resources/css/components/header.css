@@ -15,7 +15,7 @@
 	background-color: rgba(var(--blue-sapphire),0.5);
 }
 
-@supports (backdrop-filter: blur()) {
+@supports (backdrop-filter: blur(4px)) {
 	.header {
 		background-color: rgba(var(--blue-sapphire),0.15);
 		backdrop-filter: blur(4px);
