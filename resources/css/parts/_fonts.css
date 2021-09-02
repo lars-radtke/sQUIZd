@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Montserrat";
+	src: 	url(../../fonts/Montserrat-VF.woff2) format("woff2"),
+			url(../../fonts/Montserrat-VF.ttf) format("truetype");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: 	url(../../fonts/Montserrat-Italic-VF.woff2) format("woff2"),
+			url(../../fonts/Montserrat-Italic-VF.ttf) format("truetype");
+	font-style: italic;
+}

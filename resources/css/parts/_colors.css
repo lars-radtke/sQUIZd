@@ -1,0 +1,21 @@
+:root {
+	--white: 255,255,255;
+	--black: 0,0,0;
+
+	--middle-blue: 144,224,239;
+	--pacific-blue: 0,180,216;
+	--french-blue: 0,119,182;
+	--blue-sapphire: 34,87,122;
+
+	--tea-green: 159,249,154;
+	--light-green: 128,237,153;
+	--ocean-green: 87,244,63;
+
+	--max-yellow: 242,202,0;
+	--inchworm: 194,202,97;
+	--turqouise: 145,242,145;
+
+	--scarlet: 240,0,40;
+	--red: 250,50,40;
+	--salmon: 200,40,40;
+}
