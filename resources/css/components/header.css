@@ -1,0 +1,52 @@
+.header {
+	height: 100px;
+	width: 100%;
+	padding: 10px 0 15px 0;
+	border-bottom: 2px solid rgb(var(--white));
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: rgb(var(--white));
+	cursor: default;
+}
+
+.backdrop {
+	background-color: rgba(var(--blue-sapphire),0.5);
+}
+
+@supports (backdrop-filter: blur()) {
+	.header {
+		background-color: rgba(var(--blue-sapphire),0.15);
+		backdrop-filter: blur(4px);
+	}
+}
+
+
+.h1 {
+	font-variation-settings: "wght" 400;
+	font-size: 1.3rem;
+}
+
+span {
+	color: rgb(var(--red));
+}
+
+.header__h2-container {
+	width: 100%;
+	font-variation-settings: "wght" 400;
+	font-size: 1rem;
+}
+
+.h2 {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.h2--active {
+	opacity: 1;
+	width: 100%;
+}
