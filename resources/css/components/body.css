@@ -1,0 +1,14 @@
+* {
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.3;
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom, rgb(var(--middle-blue)) 0%, rgb(var(--pacific-blue)) 33%, rgb(var(--french-blue)) 66%, rgb(var(--blue-sapphire)) 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}

@@ -1,13 +1,19 @@
+/*
+
+@import "parts/.css";
+@import "components/.css";
+
+*/
+
 @import "parts/_reset.css";
-@import "parts/_fonts.css";
 @import "parts/_colors.css";
+@import "parts/_fonts.css";
 @import "parts/_flexbox.css";
 @import "parts/_grid.css";
 
-@import "components/_base.css";
-@import "components/_header.css";
-@import "components/_main.css";
-@import "components/_tile.css";
-@import "components/_squid.css";
-@import "components/_bookmark.css";
-@import "components/_footer.css";
+@import "components/body.css";
+@import "components/header.css";
+@import "components/main.css";
+@import "components/section.css";
+@import "components/tile.css";
+@import "components/footer.css";
