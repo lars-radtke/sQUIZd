@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Lighthouse</title>
+    <g id="Lighthouse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M50.2085697,5.0000425 C53.5696263,5.00208247 58.0612245,5.10204082 61,10 L61,10 L59,10 L59,23 L61,23 L71,95 L54,95 L54,87 C54,84.790861 52.209139,83 50,83 C47.790861,83 46,84.790861 46,87 L46,87 L46,95 L29,95 L39,23 L41,23 L41,10 L39,10 C42,5 46.5949234,5 50,5 Z M65,67 L35,67 L33,81 L67,81 L65,67 Z M61,39 L39,39 L37,53 L63,53 L61,39 Z M57,10 L43,10 L43,23 L48,23 L48,21 C48,19.8954305 48.8954305,19 50,19 C51.1045695,19 52,19.8954305 52,21 L52,21 L52,23 L57,23 L57,10 Z" id="lighthouse" fill="#FFFFFF"></path>
+    </g>
+</svg>
