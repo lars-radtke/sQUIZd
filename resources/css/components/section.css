@@ -1,0 +1,30 @@
+.section {
+	width: calc(100% / 3);
+	height: 100%;
+	padding: 0 10px;
+	position: relative;
+}
+
+.questions__toggle-bookmarks {
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0px;
+	border: 2px solid rgb(var(--white));
+	border-radius: 20px 0 0 20px;
+	border-right: 0;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.questions__toggle-icon {
+	opacity: 0.3;
+	width: 50px;
+	height: 50px;
+	transition: 0.3s;
+}
+
+.questions__toggle-bookmarks--active .questions__toggle-icon {
+	opacity: 1;
+}
