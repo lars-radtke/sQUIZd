@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>sQUIZd | start</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
-	
+	<script src="resources/js/main.js" defer></script>
   </head>
   <body>
     <header class="header backdrop flex f-column f-justify-between">
@@ -14,9 +14,9 @@
         <span>s</span>QUIZ<span>d</span>
       </h1>
 	  <div class="header__h2-container flex f-align-i-center">
-      	<h2 class="h2 h2--active" id="h2__start">Questions</h2>
-      	<h2 class="h2" id="h2__create">Create A Question</h2>
-      	<h2 class="h2" id="h2__profile">Profile</h2>
+      	<h2 class="subheadline subheadline--active" id="subheadline__start">Questions</h2>
+      	<h2 class="subheadline" id="subheadline__create">Create A Question</h2>
+      	<h2 class="subheadline" id="subheadline__profile">Profile</h2>
 	</div>
     </header>
     <main class="main flex">
@@ -83,7 +83,7 @@
         </div>
       </section>
       <section class="section" id="section__create">
-		<article class="tile tile__create bookmarked">
+		<div class="tile tile__create bookmarked">
 			<label class="tile__label create__label">Your question:
 				<textarea class="tile__answer-area create__answer-area" placeholder="Type in your question here."></textarea>
 			</label>
@@ -92,7 +92,7 @@
 			<label class="tile__label create__answer-label">Your Answer:
 				<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
 			</label>
-		</article>
+		</div>
 		<button class="create__submit-button">Submit question</button>
 		<button class="create__submit-button">Discard question</button>
       </section>
@@ -126,6 +126,5 @@
 			</button>
 	</div>
     </footer>
-	<script src="resources/js/scripts.js"></script>
   </body>
 </html>
