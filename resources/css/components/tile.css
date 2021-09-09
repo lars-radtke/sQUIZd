@@ -7,7 +7,7 @@
 
 .tile {
 	width: 100%;
-	max-width: 600px;
+	max-width: 500px;
 	white-space: wrap;
 	padding: 20px;
 	margin: 0 auto 40px auto;
@@ -16,6 +16,11 @@
 	border: 1px solid rgb(var(--white));
 	border-radius: 20px;
 	position: relative;
+	align-self: start;
+}
+
+.tile--correct {
+	background-image: linear-gradient(to top right, rgba(var(--ocean-green),0.2) 0%, rgba(var(--light-green),0.5) 50%, rgba(var(--tea-green),0.8) 100%);
 }
 
 .tile--hidden {
@@ -62,6 +67,10 @@
 	background-image: url(../../images/squid_thinking.png);
 }
 
+.tile__squid--correct, .tile__bookmark--active +.tile__squid--correct {
+	background-image: url(../../images/squid_happy.png);
+}
+
 .tile__label {
 	font-variation-settings: "wght" 400;
 	color: rgb(var(--blue-sapphire));
@@ -93,7 +102,7 @@
 
 .tile__answer-button {
 	display: block;
-	margin: 20px auto 0 auto;
+	margin: 30px auto 0 auto;
 	padding: 10px 20px;
 	background-color: rgba(var(--white),0.5);
 	color: rgb(var(--blue-sapphire));
@@ -125,25 +134,23 @@
 
 .tile__create {
 	margin-top: 140px;
+	max-width: 700px;
 }
 
 .create__label {
-	position: normal;
-}
-
-.create__answer-area {
-	position: normal;
-	width: calc(100% - 60px);
-	margin-bottom: 20px;
-}
-
-.create__answer-label {
-	width: 100%;
+	width: calc(100% -20px);
 	position: normal;
 	display: block;
 }
 
-.create__submit-button {
+.create__answer-area {
+	position: normal;
+	width: calc(100% - 20px);
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+
+.create__button {
 	display: block;
 	margin: 0 auto 20px auto;
 	padding: 10px 20px;
@@ -153,4 +160,8 @@
 	border-radius: 10px;
 	cursor: pointer;
 	transition: 0.3s;
+}
+
+.create__button:hover {
+	background-color: rgba(var(--white),1);
 }
