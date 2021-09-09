@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>sQUIZd | start</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+	<link rel="icon" type="image/x-icon" href="resources/images/squid_happy.png">
+	<script src="resources/js/fallbackQuestions.js" defer></script>
+	<script src="resources/js/functions.js" defer></script>
 	<script src="resources/js/main.js" defer></script>
   </head>
   <body>
@@ -20,81 +23,31 @@
 	</div>
     </header>
     <main class="main flex">
-      <section class="section questions" id="section__questions">
+      <section class="section section--active" id="section__questions">
         <button
           class="questions__toggle-bookmarks backdrop"
 		  id="toggle__bookmarks"
 		  title="Toggle bookmarked questions only off/on"
-          aria-label="Display bookmarked questions only"
-        >
+          aria-label="Display bookmarked questions only">
 			<img class="questions__toggle-icon" src="resources/icons/anchor.svg">
 		</button>
-        <div class="questions__main">
-			<article class="tile">
-				<p class="tile__question">Who are the best Web Dev Coaches?</p>
-				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
-				</div>
-				<div class="tile__squid"></div>
-				<label class="tile__label tile__answer-label">Your Answer:
-					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
-				</label>
-				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>Lene, Lukas and Marc, obviously! </span>Like you couldn't figure that out yourself.</p>
-			</article>
-			<article class="tile">
-				<p class="tile__question">What do you call a group of penguins on land?</p>
-				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
-				</div>
-				<div class="tile__squid"></div>
-				<label class="tile__label tile__answer-label">Your Answer:
-					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
-				</label>
-				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>A group of penguins is called a wadlle when on land</span> and a raft when in the water.</p>
-			</article>
-			<article class="tile">
-				<p class="tile__question">What does the latin sentence "Post hoc ergo propter hoc" translate to?</p>
-				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
-				</div>
-				<div class="tile__squid"></div>
-				<label class="tile__label tile__answer-label">Your Answer:
-					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
-				</label>
-				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>After this, therefore because of this.</span></p>
-			</article>
-			<article class="tile">
-				<p class="tile__question">Where does the Kiwi Fruit originate from?</p>
-				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
-				</div>
-				<div class="tile__squid"></div>
-				<label class="tile__label tile__answer-label">Your Answer:
-					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
-				</label>
-				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span>China. </span>It is also called Chinese gooseberry.</p>
-			</article>
-			<article class="tile">
-				<p class="tile__question">WHAT ARE THOSE????</p>
-				<div class="tile__bookmark" role="button" aria-label="Bookmark this question" title="Bookmark this question">
-				</div>
-				<div class="tile__squid"></div>
-				<label class="tile__label tile__answer-label">Your Answer:
-					<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
-				</label>
-				<button class="tile__answer-button">Show answer</button><p class="tile__answer tile__answer--hidden"><span><a href="https://www.youtube.com/watch?v=iik25wqIuFo" style="cursor: pointer;">Click here for the explanation.</a></span></p>
-			</article>
+        <div class="questions__main grid" id="questions__main">
         </div>
       </section>
       <section class="section" id="section__create">
 		<div class="tile tile__create bookmarked">
 			<label class="tile__label create__label">Your question:
-				<textarea class="tile__answer-area create__answer-area" placeholder="Type in your question here."></textarea>
+				<textarea class="tile__answer-area create__answer-area" id="create__question" placeholder="Type in your question here."></textarea>
 			</label>
-			<div class="tile__bookmark tile__bookmark--active" role="button" aria-label="Bookmark this question" title="Bookmark this question">
-			</div>
-			<label class="tile__label create__answer-label">Your Answer:
-				<textarea class="tile__answer-area" placeholder="Type in your answer here."></textarea>
+			<label class="tile__label create__label">Your Answer:
+				<textarea class="tile__answer-area create__answer-area" id="create__answer" placeholder="Type in your answer here."></textarea>
+			</label>
+			<label class="tile__label create__label">Additional information:
+				<textarea class="tile__answer-area create__answer-area" id="create__addition" placeholder="OPTIONAL. Additional information can be inserted here."></textarea>
 			</label>
 		</div>
-		<button class="create__submit-button">Submit question</button>
-		<button class="create__submit-button">Discard question</button>
+		<button class="create__button" id="create__submit">Submit question</button>
+		<button class="create__button" id="create__discard">Discard question</button>
       </section>
       <section class="section" id="section__profile"></section>
     </main>
